@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main {
+    position: relative;
+    height: 100px;
+}
+
+.form-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="number"],
+button {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-width: 1pt;
+    border-color: black;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+button {
+    background-color: greenyellow;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    box-shadow: 2px 2px 1px gray, -2px -2px 1px gray, 2px -2px 1px gray,
+        -2px 2px 1px gray;
+}
+
+.timer {
+    position: relative;
+    height: calc(100vh - 100px);
+    background-color: indianred;
+}
+
+.timer h1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    padding: 40px 80px;
+    font-size: 8em;
+    color: white;
+    background-color: black;
+}
